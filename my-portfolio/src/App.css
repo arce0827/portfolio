@@ -181,4 +181,15 @@
     right: 0;
     border-right-color: var(--border);
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    columns: unset;
+  }
+
+  #root {
+    columns: unset;
+    display: block;
+  }
 }
