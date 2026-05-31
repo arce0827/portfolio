@@ -1,4 +1,19 @@
+@font-face{
+  font-family: Syncopate;
+  src: url(../assets/fonts/Syncopate-Regular.ttf);
+  weight: 700;
+}
+@font-face{
+  font-family: Inter;
+  src: url(../assets/fonts/Inter_18pt-Regular.ttf);
+  weight: 400;
+}
+
+/* Replace unknown @theme at-rule with CSS custom property on :root */
+
 :root {
+  --font-syncopate: Syncopate, sans-serif;
+  --font-inter: Inter, sans-serif;
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -89,6 +104,15 @@ h2 {
     font-size: 20px;
   }
 }
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-syncopate {
+  font-family: var(--font-syncopate);
+}
+
 p {
   margin: 0;
 }
@@ -106,4 +130,36 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.font-syncopate {
+  font-family: var(--font-syncopate);
+}
+
+h1 {
+  letter-spacing: 1.5px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-section {
+  animation: fadeInUp 0.8s ease-out forwards;
 }
