@@ -57,43 +57,20 @@ function App() {
 
         <section style={{height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', padding: '60px 20px', textAlign: 'center'}}>
           <div style={{maxWidth: '900px'}}>
-            <h1 className='font-syncopate' style={{fontSize: '80px', fontWeight: '300', letterSpacing: '8px', color: '#ffffff', margin: '0 0 20px 0', lineHeight: '1.2', textTransform: 'uppercase'}}>
-              Welcome to my resume
+            <TextPressure text="Good to see you!" fontSize={48} color="#ffffff" fontWeight={700} letterSpacing={0} />
+            <h1 style={{fontSize: '52px', fontWeight: '400', color: '#ffffff', margin: '0px 0 30px 0', lineHeight: '1.3', letterSpacing: '0px'}}>
+              <span style={{color: '#ffffff', fontFamily: 'var(--font-syncopate)'}}>
+                I'M ARTŪRAS SEMENČIUK
+              </span>
             </h1>
-            <p style={{fontSize: '20px', color: '#c9a9e8', lineHeight: '1.8', margin: '40px 0 50px 0', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto'}}>
+            <p style={{fontSize: '18px', color: '#c9a9e8', lineHeight: '1.7', margin: '50px auto 30px', maxWidth: '700px', fontFamily: 'var(--font-inter)'}}>
               Developer, builder, and lifelong learner — crafting digital experiences with care.
             </p>
-            <button style={{
-              padding: '14px 40px',
-              fontSize: '16px',
-              fontWeight: '500',
-              color: '#ffffff',
-              background: 'transparent',
-              border: '2px solid #9f7aea',
-              borderRadius: '50px',
-              cursor: 'pointer',
-              transition: 'all 0.3s ease',
-              textTransform: 'uppercase',
-              letterSpacing: '2px'
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.background = '#9f7aea';
-              e.target.style.color = '#ffffff';
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.background = 'transparent';
-              e.target.style.color = '#ffffff';
-            }}>
-              Discover More
-            </button>
-          </div>
-          <div style={{position: 'absolute', bottom: '40px', color: '#9ca3af', fontSize: '12px', letterSpacing: '3px', animation: 'pulse 2s infinite'}}>
-            S C R O L L
           </div>
         </section>
 
         {/* About Section */}
-        <section data-fade-in style={{padding: '100px 20px', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a0a', opacity: 0}}>
+        <section data-fade-in style={{padding: '100px 20px', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a0a', opacity: 0, fontFamily: 'var(--font-inter)'}}>
           <div style={{maxWidth: '1000px', width: '100%'}}>
             <p style={{fontSize: '14px', color: '#9f7aea', letterSpacing: '2px', marginBottom: '10px', textTransform: 'uppercase'}}>01 — ABOUT</p>
             <h2 className='font-syncopate' style={{fontSize: '56px', fontWeight: '300', letterSpacing: '3px', color: '#ffffff', margin: '0 0 60px 0', textTransform: 'uppercase'}}>
@@ -104,23 +81,23 @@ function App() {
                 <p style={{fontSize: '64px', color: '#9f7aea', margin: 0}}>JD</p>
               </div>
               <div>
-                <p style={{fontSize: '18px', color: '#c9a9e8', lineHeight: '1.8', marginBottom: '20px'}}>
+                <p className="font-inter" style={{fontSize: '18px', color: '#c9a9e8', lineHeight: '1.8', marginBottom: '20px'}}>
                   Hi, I'm a developer based somewhere on the internet. I love building products that feel as good as they look — intuitive, fast, and a little bit magical.
                 </p>
-                <p style={{fontSize: '18px', color: '#c9a9e8', lineHeight: '1.8', marginBottom: '30px'}}>
+                <p className="font-inter" style={{fontSize: '18px', color: '#c9a9e8', lineHeight: '1.8', marginBottom: '30px'}}>
                   Outside of code, I'm into music production, late-night cinema, and any excuse to travel. I believe great work comes from curiosity and good taste.
                 </p>
-                <p style={{fontSize: '18px', color: '#c9a9e8', lineHeight: '1.8', marginBottom: '30px'}}>
+                <p className="font-inter" style={{fontSize: '18px', color: '#c9a9e8', lineHeight: '1.8', marginBottom: '30px'}}>
                   Open to interesting collaborations. Let's make something worth remembering.
                 </p>
                 <div style={{display: 'flex', gap: '20px'}}>
                   <a href="mailto:your@email.com" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
                     <Mail size={24} />
                   </a>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
+                  <a href="https://github.com/arce0827" target="_blank" rel="noopener noreferrer" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
                     <SVGIcon size={5} />
                   </a>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
+                  <a href="https://www.linkedin.com/in/art%C5%ABras-semen%C4%8Diuk/" target="_blank" rel="noopener noreferrer" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
                     <SVGIcon2 size={5} color="#9f7aea" />
                   </a>
                 </div>
@@ -130,7 +107,7 @@ function App() {
         </section>
 
         {/* Experience Section */}
-        <section data-fade-in style={{padding: '100px 20px', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a0a', opacity: 0}}>
+        <section data-fade-in style={{padding: '100px 20px', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a0a', opacity: 0, fontFamily: 'var(--font-inter)'}}>
           <div style={{maxWidth: '1000px', width: '100%'}}>
             <p style={{fontSize: '14px', color: '#9f7aea', letterSpacing: '2px', marginBottom: '10px', textTransform: 'uppercase'}}>02 — EXPERIENCE</p>
             <h2 className='font-syncopate' style={{fontSize: '56px', fontWeight: '300', letterSpacing: '3px', color: '#ffffff', margin: '0 0 60px 0', textTransform: 'uppercase'}}>
@@ -143,13 +120,13 @@ function App() {
                   <div style={{display: 'flex', gap: '15px', alignItems: 'start'}}>
                     <Briefcase size={24} style={{color: '#9f7aea', marginTop: '2px'}} />
                     <div>
-                      <h3 style={{fontSize: '20px', color: '#ffffff', margin: '0 0 5px 0'}}>Senior Frontend Developer</h3>
-                      <p style={{fontSize: '16px', color: '#9f7aea', margin: 0}}>Acme Corp</p>
+                      <h3 className="font-inter" style={{fontSize: '20px', color: '#ffffff', margin: '0 0 5px 0'}}>Senior Frontend Developer</h3>
+                      <p className="font-inter" style={{fontSize: '16px', color: '#9f7aea', margin: 0}}>Acme Corp</p>
                     </div>
                   </div>
-                  <span style={{fontSize: '14px', color: '#9f7aea', whiteSpace: 'nowrap'}}>2022 — Present</span>
+                  <span className="font-inter" style={{fontSize: '14px', color: '#9f7aea', whiteSpace: 'nowrap'}}>2022 — Present</span>
                 </div>
-                <p style={{fontSize: '16px', color: '#c9a9e8', lineHeight: '1.6', margin: 0, marginLeft: '39px'}}>
+                <p className="font-inter" style={{fontSize: '16px', color: '#c9a9e8', lineHeight: '1.6', margin: 0, marginLeft: '39px'}}>
                   Leading the redesign of the core product. Building component systems and shipping polished UI to thousands of users daily.
                 </p>
               </div>
@@ -160,13 +137,13 @@ function App() {
                   <div style={{display: 'flex', gap: '15px', alignItems: 'start'}}>
                     <Briefcase size={24} style={{color: '#9f7aea', marginTop: '2px'}} />
                     <div>
-                      <h3 style={{fontSize: '20px', color: '#ffffff', margin: '0 0 5px 0'}}>Full Stack Developer</h3>
-                      <p style={{fontSize: '16px', color: '#9f7aea', margin: 0}}>Studio Lumen</p>
+                      <h3 className="font-inter" style={{fontSize: '20px', color: '#ffffff', margin: '0 0 5px 0'}}>Full Stack Developer</h3>
+                      <p className="font-inter" style={{fontSize: '16px', color: '#9f7aea', margin: 0}}>Studio Lumen</p>
                     </div>
                   </div>
-                  <span style={{fontSize: '14px', color: '#9f7aea', whiteSpace: 'nowrap'}}>2020 — 2022</span>
+                  <span className="font-inter" style={{fontSize: '14px', color: '#9f7aea', whiteSpace: 'nowrap'}}>2020 — 2022</span>
                 </div>
-                <p style={{fontSize: '16px', color: '#c9a9e8', lineHeight: '1.6', margin: 0, marginLeft: '39px'}}>
+                <p className="font-inter" style={{fontSize: '16px', color: '#c9a9e8', lineHeight: '1.6', margin: 0, marginLeft: '39px'}}>
                   Built end-to-end features across web and API. Collaborated with designers to translate concepts into production-ready experiences.
                 </p>
               </div>
@@ -177,13 +154,13 @@ function App() {
                   <div style={{display: 'flex', gap: '15px', alignItems: 'start'}}>
                     <Briefcase size={24} style={{color: '#9f7aea', marginTop: '2px'}} />
                     <div>
-                      <h3 style={{fontSize: '20px', color: '#ffffff', margin: '0 0 5px 0'}}>Junior Developer</h3>
-                      <p style={{fontSize: '16px', color: '#9f7aea', margin: 0}}>Pixel Forge</p>
+                      <h3 className="font-inter" style={{fontSize: '20px', color: '#ffffff', margin: '0 0 5px 0'}}>Junior Developer</h3>
+                      <p className="font-inter" style={{fontSize: '16px', color: '#9f7aea', margin: 0}}>Pixel Forge</p>
                     </div>
                   </div>
-                  <span style={{fontSize: '14px', color: '#9f7aea', whiteSpace: 'nowrap'}}>2018 — 2020</span>
+                  <span className="font-inter" style={{fontSize: '14px', color: '#9f7aea', whiteSpace: 'nowrap'}}>2018 — 2020</span>
                 </div>
-                <p style={{fontSize: '16px', color: '#c9a9e8', lineHeight: '1.6', margin: 0, marginLeft: '39px'}}>
+                <p className="font-inter" style={{fontSize: '16px', color: '#c9a9e8', lineHeight: '1.6', margin: 0, marginLeft: '39px'}}>
                   Started my professional journey building responsive web applications and learning best practices in modern development.
                 </p>
               </div>
@@ -192,7 +169,7 @@ function App() {
         </section>
 
         {/* Education Section */}
-        <section data-fade-in style={{padding: '100px 20px', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a0a', opacity: 0}}>
+        <section data-fade-in style={{padding: '100px 20px', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a0a', opacity: 0, fontFamily: 'var(--font-inter)'}}>
           <div style={{maxWidth: '1000px', width: '100%'}}>
             <p style={{fontSize: '14px', color: '#9f7aea', letterSpacing: '2px', marginBottom: '10px', textTransform: 'uppercase'}}>03 — EDUCATION</p>
             <h2 className='font-syncopate' style={{fontSize: '56px', fontWeight: '300', letterSpacing: '3px', color: '#ffffff', margin: '0 0 60px 0', textTransform: 'uppercase'}}>
@@ -204,10 +181,10 @@ function App() {
                 <div style={{fontSize: '32px', marginBottom: '15px', color: '#9f7aea'}}>
                   <GraduationCap size={32} />
                 </div>
-                <h3 style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>Advanced React Patterns</h3>
+                <h3 className="font-inter" style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>Advanced React Patterns</h3>
                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                  <p style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>Frontend Masters</p>
-                  <span style={{fontSize: '12px', color: '#9f7aea'}}>2024</span>
+                  <p className="font-inter" style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>Frontend Masters</p>
+                  <span className="font-inter" style={{fontSize: '12px', color: '#9f7aea'}}>2024</span>
                 </div>
               </div>
 
@@ -216,10 +193,10 @@ function App() {
                 <div style={{fontSize: '32px', marginBottom: '15px', color: '#9f7aea'}}>
                   <GraduationCap size={32} />
                 </div>
-                <h3 style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>System Design Fundamentals</h3>
+                <h3 className="font-inter" style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>System Design Fundamentals</h3>
                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                  <p style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>Educative</p>
-                  <span style={{fontSize: '12px', color: '#9f7aea'}}>2023</span>
+                  <p className="font-inter" style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>Educative</p>
+                  <span className="font-inter" style={{fontSize: '12px', color: '#9f7aea'}}>2023</span>
                 </div>
               </div>
 
@@ -228,10 +205,10 @@ function App() {
                 <div style={{fontSize: '32px', marginBottom: '15px', color: '#9f7aea'}}>
                   <GraduationCap size={32} />
                 </div>
-                <h3 style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>TypeScript Deep Dive</h3>
+                <h3 className="font-inter" style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>TypeScript Deep Dive</h3>
                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                  <p style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>Total TypeScript</p>
-                  <span style={{fontSize: '12px', color: '#9f7aea'}}>2023</span>
+                  <p className="font-inter" style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>Total TypeScript</p>
+                  <span className="font-inter" style={{fontSize: '12px', color: '#9f7aea'}}>2023</span>
                 </div>
               </div>
 
@@ -240,12 +217,25 @@ function App() {
                 <div style={{fontSize: '32px', marginBottom: '15px', color: '#9f7aea'}}>
                   <GraduationCap size={32} />
                 </div>
-                <h3 style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>UI/UX Design Principles</h3>
+                <h3 className="font-inter" style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>UI/UX Design Principles</h3>
                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                  <p style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>Coursera</p>
-                  <span style={{fontSize: '12px', color: '#9f7aea'}}>2022</span>
+                  <p className="font-inter" style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>Coursera</p>
+                  <span className="font-inter" style={{fontSize: '12px', color: '#9f7aea'}}>2022</span>
                 </div>
               </div>
+
+              {/* Course Card 5 */}
+               <div style={{border: '1px solid rgba(159, 122, 234, 0.3)', borderRadius: '8px', padding: '30px', background: 'rgba(82, 39, 255, 0.05)'}}>
+                <div style={{fontSize: '32px', marginBottom: '15px', color: '#9f7aea'}}>
+                  <GraduationCap size={32} />
+                </div>
+                <h3 className="font-inter" style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>...</h3>
+                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                  <p className="font-inter" style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>Coursera</p>
+                  <span className="font-inter" style={{fontSize: '12px', color: '#9f7aea'}}>2022</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>    </>

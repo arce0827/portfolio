@@ -1,12 +1,12 @@
 @font-face{
   font-family: Syncopate;
-  src: url(../assets/fonts/Syncopate-Regular.ttf);
-  weight: 700;
+  src: url('./assets/fonts/Syncopate.ttf');
+  font-weight: 700;
 }
 @font-face{
   font-family: Inter;
-  src: url(../assets/fonts/Inter_18pt-Regular.ttf);
-  weight: 400;
+  src: url('./assets/fonts/Inter.ttf');
+  font-weight: 400;
 }
 
 /* Replace unknown @theme at-rule with CSS custom property on :root */
