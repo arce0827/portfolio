@@ -6,6 +6,8 @@ import './App.css'
 import LightPillar from './bitsBackground/background'
 import TextPressure from './bitsText/text'
 import { Briefcase, GraduationCap, Mail} from "lucide-react";
+import SVGIcon from './assets/git.svg?react';
+import SVGIcon2 from './assets/linkedin.svg?react';
 
 
 function App() {
@@ -115,12 +117,12 @@ function App() {
                   <a href="mailto:your@email.com" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
                     <Mail size={24} />
                   </a>
-                  {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
-                    <Github size={24} />
-                  </a> */}
-                  {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
-                    <Linkedin size={24} />
-                  </a> */}
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
+                    <SVGIcon size={5} />
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{color: '#9f7aea', cursor: 'pointer', transition: 'color 0.3s ease'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
+                    <SVGIcon2 size={5} color="#9f7aea" />
+                  </a>
                 </div>
               </div>
             </div>
