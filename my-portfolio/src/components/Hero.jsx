@@ -9,7 +9,7 @@ export default function Hero({ language, translations, onLanguageChange }) {
           <LightPillar
             topColor="#5227FF"
             bottomColor="#FF9FFC"
-            intensity={1.2}
+            intensity={0.8}
             rotationSpeed={0.3}
             glowAmount={0.004}
             pillarWidth={5}
@@ -18,7 +18,7 @@ export default function Hero({ language, translations, onLanguageChange }) {
             pillarRotation={25}
             interactive={true}
             mixBlendMode="screen"
-            quality="high"
+            quality="medium"
           />
           <div style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(10, 10, 10, 0.3)', pointerEvents: 'none', zIndex: 1}}></div>
         </div>
