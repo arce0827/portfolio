@@ -17,11 +17,11 @@ export default function Navigation({ language, translations }) {
       <button onClick={() => scrollToSection('experience')} style={{background: 'none', border: 'none', color: '#9f7aea', cursor: 'pointer', fontFamily: 'var(--font-inter)', fontSize: '14px', transition: 'color 0.3s ease', padding: '6px 12px', fontWeight: '500'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
         {translations[language].experienceTitle}
       </button>
-      <button onClick={() => scrollToSection('education')} style={{background: 'none', border: 'none', color: '#9f7aea', cursor: 'pointer', fontFamily: 'var(--font-inter)', fontSize: '14px', transition: 'color 0.3s ease', padding: '6px 12px', fontWeight: '500'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
-        {translations[language].educationTitle}
-      </button>
       <button onClick={() => scrollToSection('skills')} style={{background: 'none', border: 'none', color: '#9f7aea', cursor: 'pointer', fontFamily: 'var(--font-inter)', fontSize: '14px', transition: 'color 0.3s ease', padding: '6px 12px', fontWeight: '500'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
         {language === 'en' ? 'Skills' : 'Įgūdžiai'}
+      </button>
+      <button onClick={() => scrollToSection('education')} style={{background: 'none', border: 'none', color: '#9f7aea', cursor: 'pointer', fontFamily: 'var(--font-inter)', fontSize: '14px', transition: 'color 0.3s ease', padding: '6px 12px', fontWeight: '500'}} onMouseEnter={(e) => e.target.style.color = '#c084fc'} onMouseLeave={(e) => e.target.style.color = '#9f7aea'}>
+        {translations[language].educationTitle}
       </button>
     </nav>
   )
