@@ -7,7 +7,7 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import Skills from './components/Skills'
 import Toast from './components/Toast'
-import { SpeedInsights } from '@vercel/speed-insights/react'
+{/*import { SpeedInsights } from '@vercel/speed-insights/react'*/}
 
 const translations = {
   en: {
