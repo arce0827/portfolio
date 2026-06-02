@@ -7,6 +7,7 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import Skills from './components/Skills'
 import Toast from './components/Toast'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 const translations = {
   en: {
@@ -101,6 +102,7 @@ function App() {
 
   return (
     <>
+      <SpeedInsights />
       <Toast show={showToast} message={translations[language].emailCopied} />
       <Navigation language={language} translations={translations} />
       <Hero language={language} translations={translations} onLanguageChange={setLanguage} />
