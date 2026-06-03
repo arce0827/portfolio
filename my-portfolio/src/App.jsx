@@ -102,7 +102,7 @@ function App() {
 
   return (
     <>
-      <SpeedInsights />
+      {/*<SpeedInsights />*/}
       <Toast show={showToast} message={translations[language].emailCopied} />
       <Navigation language={language} translations={translations} />
       <Hero language={language} translations={translations} onLanguageChange={setLanguage} />
