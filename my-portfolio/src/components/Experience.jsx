@@ -5,7 +5,7 @@ export default function Experience({ language, translations }) {
     <section id="experience" data-fade-in style={{padding: '100px 20px', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0a0a', opacity: 0, fontFamily: 'var(--font-inter)'}}>
       <div style={{maxWidth: '1000px', width: '100%'}}>
         <p style={{fontSize: '14px', color: '#9f7aea', letterSpacing: '2px', marginBottom: '10px', textTransform: 'uppercase'}}>{translations[language].experienceSection}</p>
-        <h2 className='font-syncopate' style={{fontSize: '56px', fontWeight: '300', letterSpacing: '3px', color: '#ffffff', margin: '0 0 60px 0', textTransform: 'uppercase'}}>
+        <h2 className='section-title font-syncopate' style={{fontSize: '56px', fontWeight: '300', letterSpacing: '3px', color: '#ffffff', margin: '0 0 60px 0', textTransform: 'uppercase'}}>
           {translations[language].experienceTitle}
         </h2>
         <div style={{display: 'flex', flexDirection: 'column', gap: '30px'}}>

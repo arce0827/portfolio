@@ -30,12 +30,12 @@ export default function Hero({ language, translations, onLanguageChange }) {
         </div>
         <div style={{maxWidth: '900px'}}>
           <TextPressure text={translations[language].greeting} fontSize={48} color="#ffffff" fontWeight={700} letterSpacing={0} />
-          <h1 style={{fontSize: '52px', fontWeight: '400', color: '#ffffff', margin: '-15px 0 30px 0', lineHeight: '1.3', letterSpacing: '0px'}}>
+          <h1 class="hero-name font-syncopate" style={{fontSize: '52px', fontWeight: '400', color: '#ffffff', margin: '-15px 0 30px 0', lineHeight: '1.3', letterSpacing: '0px'}}>
             <span style={{color: '#ffffff', fontFamily: 'var(--font-syncopate)'}}>
               {translations[language].name}
             </span>
           </h1>
-          <p style={{fontSize: '18px', color: '#c9a9e8', lineHeight: '1.7', margin: '50px auto 30px', maxWidth: '700px', fontFamily: 'var(--font-inter)'}}>
+          <p className="hero-tagline font-inter" style={{fontSize: '18px', color: '#c9a9e8', lineHeight: '1.7', margin: '50px auto 30px', maxWidth: '700px', fontFamily: 'var(--font-inter)'}}>
             {translations[language].tagline}
           </p>
         </div>
