@@ -24,7 +24,7 @@ export default function Hero({ language, translations, onLanguageChange }) {
         </div>
 
       <section id="hero" style={{height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', padding: '60px 20px', textAlign: 'center'}}>
-        <div style={{position: 'fixed', top: 90, right: 790, display: 'flex', gap: '10px', zIndex: 10}}>
+        <div style={{position: 'fixed', top: 90, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '10px', zIndex: 10}}>
           <button onClick={() => onLanguageChange('en')} style={{padding: '8px 16px', background: language === 'en' ? '#5227FF' : 'rgba(82, 39, 255, 0.3)', color: '#ffffff', border: 'none', borderRadius: '4px', cursor: 'pointer', transition: 'all 0.3s ease', fontFamily: 'var(--font-inter)', fontWeight: '500'}}>EN</button>
           <button onClick={() => onLanguageChange('lt')} style={{padding: '8px 16px', background: language === 'lt' ? '#5227FF' : 'rgba(82, 39, 255, 0.3)', color: '#ffffff', border: 'none', borderRadius: '4px', cursor: 'pointer', transition: 'all 0.3s ease', fontFamily: 'var(--font-inter)', fontWeight: '500'}}>LT</button>
         </div>
