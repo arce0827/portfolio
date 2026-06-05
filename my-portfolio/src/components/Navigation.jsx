@@ -25,6 +25,7 @@ export default function Navigation({ language, translations }) {
   return (
     <nav style={{
       position: 'fixed', bottom: '24px', left: '50%', transform: 'translateX(-50%)',
+      top: isMobile ? 'auto' : '20px',
       display: 'flex', gap: isMobile ? '0px' : '4px', zIndex: 100,
       background: 'rgba(10, 10, 10, 0.85)', backdropFilter: 'blur(10px)',
       padding: isMobile ? '8px 10px' : '10px 16px', borderRadius: '50px',
