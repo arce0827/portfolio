@@ -40,6 +40,29 @@ export default function Experience({ language, translations }) {
               )}
             </p>
           </div>
+            {/* Job Card 2 */}
+          <div style={{border: '1px solid rgba(159, 122, 234, 0.3)', borderRadius: '8px', padding: '30px', background: 'rgba(82, 39, 255, 0.05)'}}>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '15px'}}>
+              <div style={{display: 'flex', gap: '15px', alignItems: 'start'}}>
+                <Briefcase size={24} style={{color: '#9f7aea', marginTop: '2px'}} />
+                <div>
+                  <h3 className="font-inter" style={{fontSize: '20px', color: '#ffffff', margin: '0 0 5px 0'}}>{translations[language].jobTitle1}</h3>
+                </div>
+              </div>
+              <span className="font-inter" style={{fontSize: '14px', color: '#9f7aea', whiteSpace: 'nowrap'}}>{translations[language].jobDate1}</span>
+            </div>
+            <p className="font-inter" style={{fontSize: '16px', color: '#c9a9e8', lineHeight: '1.6', margin: 0, marginLeft: '39px'}}>
+              {language === 'en' ? (
+                <>
+                  I worked as a Mathematics Tutor. I provided tutoring services to students ranging from 5th to 12th grade, prepared them for exams, and helped them improve their understanding of mathematical concepts and enhance their problem-solving skills.
+                </>
+              ) : (
+                <>
+                  Dirbau kaip matematikos korepetitorius. Padėjau 5-12 klasių mokiniams geriau įsisavinti matematikos sąvokas, ruošiau Juos egzaminams, bei lavinau jų problemų sprendimo įgūdžius.
+                </>
+              )}
+            </p>
+          </div>
         </div>
       </div>
     </section>

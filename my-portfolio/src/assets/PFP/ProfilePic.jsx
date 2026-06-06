@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from './MIDI2026a.jpg'; // Adjust the path as necessary
+import profilePic from './MIDI2026a.png'; // Adjust the path as necessary
 
 function ProfilePic({ size }) {
   return (

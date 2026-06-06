@@ -93,6 +93,45 @@ export default function Education({ language, translations }) {
             </div>
           </div>
 
+          
+
+          {/* Course Card 8 */}
+          <div style={{border: '1px solid rgba(159, 122, 234, 0.3)', borderRadius: '8px', padding: '30px', background: 'rgba(82, 39, 255, 0.05)'}}>
+            <div style={{fontSize: '32px', marginBottom: '15px', color: '#9f7aea'}}>
+              <GraduationCap size={32} />
+            </div>
+            <h3 className="font-inter" style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>{translations[language].course8}</h3>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+              <p className="font-inter" style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>{translations[language].university}</p>
+              <span className="font-inter" style={{fontSize: '12px', color: '#9f7aea'}}>2024</span>
+            </div>
+          </div>
+
+          {/* Course Card 9 */}
+          <div style={{border: '1px solid rgba(159, 122, 234, 0.3)', borderRadius: '8px', padding: '30px', background: 'rgba(82, 39, 255, 0.05)'}}>
+            <div style={{fontSize: '32px', marginBottom: '15px', color: '#9f7aea'}}>
+              <GraduationCap size={32} />
+            </div>
+            <h3 className="font-inter" style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>{translations[language].course9}</h3>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+              <p className="font-inter" style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>{translations[language].university}</p>
+              <span className="font-inter" style={{fontSize: '12px', color: '#9f7aea'}}>2024</span>
+            </div>
+          </div>
+
+           {/* Course Card 10 */}
+          <div style={{border: '1px solid rgba(159, 122, 234, 0.3)', borderRadius: '8px', padding: '30px', background: 'rgba(82, 39, 255, 0.05)'}}>
+            <div style={{fontSize: '32px', marginBottom: '15px', color: '#9f7aea'}}>
+              <GraduationCap size={32} />
+            </div>
+            <h3 className="font-inter" style={{fontSize: '18px', color: '#ffffff', margin: '0 0 5px 0'}}>{translations[language].course10}</h3>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+              <p className="font-inter" style={{fontSize: '14px', color: '#9f7aea', margin: 0}}>{translations[language].university}</p>
+              <span className="font-inter" style={{fontSize: '12px', color: '#9f7aea'}}>2025</span>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>
