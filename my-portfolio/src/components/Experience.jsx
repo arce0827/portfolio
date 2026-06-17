@@ -9,7 +9,30 @@ export default function Experience({ language, translations }) {
           {translations[language].experienceTitle}
         </h2>
         <div style={{display: 'flex', flexDirection: 'column', gap: '30px'}}>
-          {/* Job Card 1 */}
+        {/* Job Card 1 */}
+          <div style={{border: '1px solid rgba(159, 122, 234, 0.3)', borderRadius: '8px', padding: '30px', background: 'rgba(82, 39, 255, 0.05)'}}>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '15px'}}>
+              <div style={{display: 'flex', gap: '15px', alignItems: 'start'}}>
+                <Briefcase size={24} style={{color: '#9f7aea', marginTop: '2px'}} />
+                <div>
+                  <h3 className="font-inter" style={{fontSize: '20px', color: '#ffffff', margin: '0 0 5px 0'}}>{translations[language].jobTitle2}</h3>
+                </div>
+              </div>
+              <span className="font-inter" style={{fontSize: '14px', color: '#9f7aea', whiteSpace: 'nowrap'}}>{translations[language].jobDate2}</span>
+            </div>
+            <p className="font-inter" style={{fontSize: '16px', color: '#c9a9e8', lineHeight: '1.6', margin: 0, marginLeft: '39px'}}>
+              {language === 'en' ? (
+                <>
+                  Currently completing EPAM SAP Development trainee program. This program masters my SQL and Database modelling skills, as well as my SAP ABAP programming skills.
+                </>
+              ) : (
+                <>
+                  Šiuo metu baigiu EPAM "SAP Development trainee" kursą. Šis kursas tobulina mano SQL ir duomenų bazių modeliavimo įgūdžius, taip pat SAP ABAP programavimo įgūdžius.
+                </>
+              )}
+            </p>
+          </div>
+          {/* Job Card 2 */}
           <div style={{border: '1px solid rgba(159, 122, 234, 0.3)', borderRadius: '8px', padding: '30px', background: 'rgba(82, 39, 255, 0.05)'}}>
             <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '15px'}}>
               <div style={{display: 'flex', gap: '15px', alignItems: 'start'}}>
@@ -40,7 +63,7 @@ export default function Experience({ language, translations }) {
               )}
             </p>
           </div>
-            {/* Job Card 2 */}
+            {/* Job Card 3 */}
           <div style={{border: '1px solid rgba(159, 122, 234, 0.3)', borderRadius: '8px', padding: '30px', background: 'rgba(82, 39, 255, 0.05)'}}>
             <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '15px'}}>
               <div style={{display: 'flex', gap: '15px', alignItems: 'start'}}>
